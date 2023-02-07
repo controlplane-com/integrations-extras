@@ -1,4 +1,4 @@
-# CHANGELOG - AwesomeApp Integration
+# CHANGELOG - ControlPlaneApp Integration
 
 1.0.0 / Unreleased
 ==================
