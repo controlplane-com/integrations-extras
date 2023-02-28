@@ -20,16 +20,8 @@
   "assets": {
     "integration": {
       "source_type_name": "ControlPlane",
-      "configuration": {
-        "spec": "assets/configuration/spec.yaml"
-      },
       "events": {
         "creates_events": false
-      },
-      "metrics": {
-        "prefix": "controlplane.",
-        "check": "",
-        "metadata_path": "metadata.csv"
       },
       "service_checks": {
         "metadata_path": "assets/service_checks.json"
@@ -43,8 +35,8 @@
   "author": {
     "support_email": "support@controlplane.com",
     "name": "Control Plane",
-    "homepage": "",
-    "sales_email": ""
+    "homepage": "https://controlplane.com/",
+    "sales_email": "info@controlplane.com"
   },
   "oauth": {}
 }

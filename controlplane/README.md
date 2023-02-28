@@ -1,61 +1,40 @@
-# Agent Check: ControlPlane
+# ControlPlane
 
 ## Overview
 
-This check monitors [ControlPlane][1].
+Control Plane is a hybrid platform enabling cloud architects to combine the services, regions, and computing power of Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure and any other public or private cloud to provide developers with a flexible yet unbreakable global environment for building backend apps and services.
+
+On Control Plane, microservices can run simultaneously on any combination of cloud compute and consume any combination of cloud services without embedded credentials. The platform handles identity conveyance and authorization uniformly, utilizing best-practices/least privilege principles consistently and securely.
 
 ## Setup
 
-### Installation
+To configure log shipping to DataDog, check out our [documentation][1].
 
-To install the ControlPlane check on your host:
+### Log collection
 
+There are two types of logs sent to DataDog:
 
-1. Install the [developer toolkit]
-(https://docs.datadoghq.com/developers/integrations/new_check_howto/#developer-toolkit)
- on any machine.
-
-2. Run `ddev release build controlplane` to build the package.
-
-3. [Download the Datadog Agent][2].
-
-4. Upload the build artifact to any host with an Agent and
- run `datadog-agent integration install -w
- path/to/controlplane/dist/<ARTIFACT_NAME>.whl`.
-
-### Configuration
-
-1. <List of steps to setup this Integration>
-
-### Validation
-
-<Steps to validate integration is functioning as expected>
+- Access logs
+- Container standard output / error
 
 ## Data Collected
 
 ### Metrics
 
-ControlPlane does not include any metrics.
+ControlPlane does not include any metrics at this time.
 
 ### Service Checks
 
-ControlPlane does not include any service checks.
+ControlPlane does not include any service checks at this time.
 
 ### Events
 
-ControlPlane does not include any events.
+ControlPlane does not include any events at this time.
 
 ## Troubleshooting
 
-Need help? Contact [Datadog support][3].
+Need help? Contact [Control Plane Support][2] or [Datadog Support][3].
 
-[1]: **LINK_TO_INTEGRATION_SITE**
-[2]: https://app.datadoghq.com/account/settings#agent
-[3]: https://docs.datadoghq.com/agent/kubernetes/integrations/
-[4]: https://github.com/DataDog/integrations-extras/blob/master/controlplane/datadog_checks/controlplane/data/conf.yaml.example
-[5]: https://docs.datadoghq.com/agent/guide/agent-commands/#start-stop-and-restart-the-agent
-[6]: https://docs.datadoghq.com/agent/guide/agent-commands/#agent-status-and-information
-[7]: https://github.com/DataDog/integrations-extras/blob/master/controlplane/metadata.csv
-[8]: https://github.com/DataDog/integrations-extras/blob/master/controlplane/assets/service_checks.json
-[9]: https://docs.datadoghq.com/help/
-
+[1]: https://docs.controlplane.com/reference/org#datadog
+[2]: https://controlplane.com/contactus
+[3]: https://docs.datadoghq.com/help/
